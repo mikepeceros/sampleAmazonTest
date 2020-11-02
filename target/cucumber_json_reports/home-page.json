@@ -3,7 +3,7 @@
     "line": 3,
     "elements": [
       {
-        "line": 12,
+        "line": 13,
         "name": "Code - Get List of Best Sellers for specific products",
         "description": "",
         "id": "search-products-in-amazon-dashboard;code---get-list-of-best-sellers-for-specific-products;;2",
@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2712438600,
+              "duration": 2211927000,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 137489300,
+              "duration": 260732200,
               "status": "passed"
             },
             "line": 7,
@@ -42,7 +42,7 @@
           },
           {
             "result": {
-              "duration": 1913048800,
+              "duration": 2083639300,
               "status": "passed"
             },
             "line": 8,
@@ -54,25 +54,27 @@
           },
           {
             "result": {
-              "duration": 895125300,
+              "duration": 22000,
               "status": "passed"
             },
             "line": 9,
-            "name": "The Web page list products with the badge \"Best Seller\" for \"Headphones\"",
+            "name": "The Web page lists products in according to the filter",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Best Seller\"",
-                  "offset": 42
-                },
-                {
-                  "val": "\"Headphones\"",
-                  "offset": 60
-                }
-              ],
-              "location": "DashboardSteps.the_Web_page_list_products_with_badge(String,String)"
+              "location": "DashboardSteps.the_Web_page_lists_products_in_according_to_the_filter()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The Web page also list Best Sellers within the products",
+            "match": {
+              "location": "DashboardSteps.the_Web_page_also_list_Best_Sellers_within_the_products()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -82,7 +84,7 @@
         ]
       },
       {
-        "line": 13,
+        "line": 14,
         "name": "Code - Get List of Best Sellers for specific products",
         "description": "",
         "id": "search-products-in-amazon-dashboard;code---get-list-of-best-sellers-for-specific-products;;3",
@@ -91,7 +93,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2953617900,
+              "duration": 2423688100,
               "status": "passed"
             },
             "line": 6,
@@ -103,15 +105,15 @@
           },
           {
             "result": {
-              "duration": 124914300,
+              "duration": 152852000,
               "status": "passed"
             },
             "line": 7,
-            "name": "The user inputs the product \"Laptop\"",
+            "name": "The user inputs the product \"Monitor\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Laptop\"",
+                  "val": "\"Monitor\"",
                   "offset": 28
                 }
               ],
@@ -121,7 +123,7 @@
           },
           {
             "result": {
-              "duration": 1913567800,
+              "duration": 2054298500,
               "status": "passed"
             },
             "line": 8,
@@ -133,25 +135,27 @@
           },
           {
             "result": {
-              "duration": 590846200,
+              "duration": 23400,
               "status": "passed"
             },
             "line": 9,
-            "name": "The Web page list products with the badge \"Best Seller\" for \"Laptop\"",
+            "name": "The Web page lists products in according to the filter",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Best Seller\"",
-                  "offset": 42
-                },
-                {
-                  "val": "\"Laptop\"",
-                  "offset": 60
-                }
-              ],
-              "location": "DashboardSteps.the_Web_page_list_products_with_badge(String,String)"
+              "location": "DashboardSteps.the_Web_page_lists_products_in_according_to_the_filter()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The Web page also list Best Sellers within the products",
+            "match": {
+              "location": "DashboardSteps.the_Web_page_also_list_Best_Sellers_within_the_products()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [

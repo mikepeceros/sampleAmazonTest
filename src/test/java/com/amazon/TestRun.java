@@ -1,7 +1,6 @@
 package com.amazon;
 
 import com.amazon.pages.DashboardPage;
-import com.amazon.utilities.Utils;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -11,7 +10,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import java.util.concurrent.TimeUnit;
@@ -24,21 +22,12 @@ import java.util.concurrent.TimeUnit;
         tags = { "@SearchProduct" },
         glue = { "com.amazon.steps"})
 
-public class AppTestRun extends AbstractTestNGCucumberTests {
+public class TestRun extends AbstractTestNGCucumberTests {
     static private RemoteWebDriver webDriver;
     protected static DashboardPage dashboardPage;
-    private final String amazonScreenshotsFolder = "./target/screenshots/";
-
-    public AppTestRun(){}
 
     public void initPages(RemoteWebDriver webDriver) {
         dashboardPage = new DashboardPage(webDriver);
-    }
-
-    @BeforeTest
-    public void cleanResources(){
-        Utils utils = new Utils();
-        utils.cleanFolder(amazonScreenshotsFolder);
     }
 
     @BeforeMethod
@@ -69,7 +58,7 @@ public class AppTestRun extends AbstractTestNGCucumberTests {
         try{
             WebDriverManager.chromedriver().setup();
             webDriver = new ChromeDriver(options);
-            webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+            webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             initPages(webDriver);
         }catch (Exception e){
             //TODO
@@ -81,8 +70,7 @@ public class AppTestRun extends AbstractTestNGCucumberTests {
         try{
             WebDriverManager.firefoxdriver().setup();
             webDriver = new FirefoxDriver();
-            webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-            webDriver.manage().window().maximize();
+            webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             initPages(webDriver);
         }catch (Exception e){
             //TODO
