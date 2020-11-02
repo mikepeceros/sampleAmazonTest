@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [amazon-dashboard-automation]">
+  <test thread-count="1" verbose="0" name="SearchProduct(failed)">
+    <parameter name="mergeProcess" value="false"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="version" value="80.0"/>
+    <classes>
+      <class name="com.amazon.AppTestRun">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="cleanResources"/>
+          <include name="runScenario" invocation-numbers="1"/>
+          <include name="startBrowser"/>
+          <include name="quitDriver"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.amazon.AppTestRun -->
+    </classes>
+  </test> <!-- SearchProduct(failed) -->
+</suite> <!-- Failed suite [amazon-dashboard-automation] -->

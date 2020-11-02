@@ -27,12 +27,8 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "The Web page lists products in according to the filter",
+  "name": "The Web page list products with the badge \"Best Seller\" for \"\u003cProduct\u003e\"",
   "keyword": "Then "
-});
-formatter.step({
-  "name": "The Web page also list Best Sellers within the products",
-  "keyword": "And "
 });
 formatter.examples({
   "name": "",
@@ -51,7 +47,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "Monitor"
+        "Laptop"
       ]
     }
   ]
@@ -97,21 +93,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The Web page lists products in according to the filter",
+  "name": "The Web page list products with the badge \"Best Seller\" for \"Headphones\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DashboardSteps.the_Web_page_lists_products_in_according_to_the_filter()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The Web page also list Best Sellers within the products",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "DashboardSteps.the_Web_page_also_list_Best_Sellers_within_the_products()"
+  "location": "DashboardSteps.the_Web_page_list_products_with_badge(String,String)"
 });
 formatter.result({
   "status": "passed"
@@ -137,7 +123,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user inputs the product \"Monitor\"",
+  "name": "The user inputs the product \"Laptop\"",
   "keyword": "When "
 });
 formatter.match({
@@ -157,21 +143,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The Web page lists products in according to the filter",
+  "name": "The Web page list products with the badge \"Best Seller\" for \"Laptop\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DashboardSteps.the_Web_page_lists_products_in_according_to_the_filter()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The Web page also list Best Sellers within the products",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "DashboardSteps.the_Web_page_also_list_Best_Sellers_within_the_products()"
+  "location": "DashboardSteps.the_Web_page_list_products_with_badge(String,String)"
 });
 formatter.result({
   "status": "passed"

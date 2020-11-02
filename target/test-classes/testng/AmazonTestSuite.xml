@@ -7,7 +7,7 @@
         <parameter name="browser" value="Chrome" />
         <parameter name="version" value="80.0" />
         <classes>
-            <class name="com.amazon.TestRun" />
+            <class name="com.amazon.AppTestRun" />
         </classes>
     </test>
 </suite>
