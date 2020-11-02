@@ -6,9 +6,9 @@
     Given The user goes to the dashboard
       When The user inputs the product "<Product>"
       And The user clicks the search icon
-      Then The Web page list products with the badge "Best Seller" for "<Product>"
+      Then The Web page lists products in according to the filter
+      And The Web page also list Best Sellers within the products
       Examples:
         | Product     |
         | Headphones  |
-        | Laptop      |
-        
+        | Monitor     |
